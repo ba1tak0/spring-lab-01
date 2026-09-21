@@ -28,7 +28,7 @@ public class Lab2Controller {
         this.requestScopedService = requestScopedService;
     }
 
-    @GetMapping("/notify")
+    @GetMapping("/kz/iitu/spring_lab_01/notify")
     public Map<String, Object> notify(@RequestParam(defaultValue = "Hello") String text) {
         return Map.of("primary",   notifications.viaPrimary(text),
                 "console",   notifications.viaConsole(text),
@@ -36,7 +36,7 @@ public class Lab2Controller {
                 "beanNames", notifications.names());
     }
 
-    @GetMapping("/scope")
+    @GetMapping("/kz/iitu/spring_lab_01/scope")
     public Map<String, String> checkScope() {
         return Map.of(
                 "singleton_1", singletonService.getId(),
