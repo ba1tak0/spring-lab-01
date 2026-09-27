@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-lab
+
+server:
+  port: 8080
+
+app:
+  owner: Bilal Baitursyn
+  group: IS-2406
+  mail:
+    from: no-reply@iitu.kz
+    retry-count: 3
+    timeout: 5s
+    enabled: true
+  upload:
+    max-file-size: 10MB
+    allowed-extensions:
+    - pdf
+    - docx
+    - png
+
+logging:
+  level:
+    kz.iitu: INFO
